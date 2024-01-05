@@ -77,13 +77,21 @@ body {
  .navbar-section-mobile {
     display: none;
  }
+ .logo-n-ham-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .navbar-logo-mobile {
+    z-index: 100;
+    margin-left: 10px;
+ }
  .hamburger-btn-wrapper {
     position: relative;
     z-index: 100;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: auto;
     width: 80px;
     height: 80px;
     cursor: pointer;
