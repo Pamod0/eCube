@@ -1,0 +1,8 @@
+@media only screen and (max-width: 321px) {
+    .navbar-section {
+        display: none;
+    }
+    .navbar-section-mobile {
+        display: block;
+    }
+}
