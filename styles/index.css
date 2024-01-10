@@ -20,6 +20,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 9999;
+    background-color: #FFFFFF;
     overflow: hidden;
     border-bottom: 1px solid #ccc; /* Regular border */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow */
@@ -203,41 +204,53 @@ body {
 
 .home-section {
     height: 100vh;
+    overflow: hidden;
     scroll-snap-align: start;
     scroll-snap-stop: always;
     /*scroll-margin-top: 30px;*/
 }
+
+/* home-section-01 */
 .home-section-01 {
-    background-color: #FFFFFF;
+    
 }
-.hero-section h1 {
-    margin-top: 0;
-}
-/*
 .hero-grid-container {
     display: grid;
-    gap: 10px;
-    padding: 10px;
+    grid-template-columns: auto auto auto auto auto auto;
 }
-
 .grid-item {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 45px;
 }
 .item1 {
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 7;
+    grid-row: 1 / span 6;
+}
+.item1 .we-make {
+    width: 270px;
+    height: 90px;
+}
+.item1 .your {
+    width: 210px;
+    height: 120px;
+}
+.item1 .memorable {
+    width: 199;
+    height: 100px;
 }
 .item2 {
-    grid-column: 5 / span 8;
-    
+    grid-column: 8 / span 10;
 }
-*/
+.item2 .mascot {
+    height: 500px;
+    width: 500px;
+}
 
 /* home-section-02 */
 .home-section-02 {
-    background-color: #3ab937;
+    background-color: #191919;
 }
 
 /* home-section-03 */
