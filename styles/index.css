@@ -238,8 +238,34 @@ body {
 }
 
 /* home-section-01 */
+
+/* The dots/bullets/indicators */
+.three-dots-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.three-dots {
+  display: flex;
+  flex-direction: column;
+}
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 2px 2px;
+    background-color: #ffffff;
+    border: 2px solid #0000004B;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
 .textarea-col {
-    padding: 45px 0 0 10px;
+    padding: 45px 0 0 0;
+}
+.text-boxes {
+    display: flex;
+    justify-content: start;
 }
 .mascot-col {
     display: flex;
@@ -249,17 +275,24 @@ body {
 }
 .we-make {
     width: 270px;
-    height: 90px;
+    height: 80px;
 }
 .your {
-    width: 210px;
-    height: 120px;
+    width: 228px;
+    height: 125px;
+}
+.brand {
+    width: 270px;
+    height: 125px;
+
 }
 .memorable {
     width: 199;
     height: 100px;
 }
 .subheading {
+    display: inline-block;
+    cursor: default;
     font-size: 18px;
     color: #9370D9;
     margin-bottom: 15px;
@@ -270,11 +303,30 @@ body {
 .emoji {
     width: 18px;
     height: 18px;
-
+}
+.btn-and-text {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.btn-and-text .get-started {
+    margin-right: 15px;
+}
+.text-and-small-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #191919;
+    font-size: 15px;
+}
+.text-and-small-btn img {
+    margin-left: 6px;
 }
 .mascot {
     height: 400px;
     width: 400px;
+
 }
 
 /* home-section-02 */
@@ -284,5 +336,5 @@ body {
 
 /* home-section-03 */
 .home-section-03 {
-    background-color: #bfc213;
+    background-color: #ffffff;
 }

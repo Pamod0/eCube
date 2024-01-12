@@ -14,3 +14,13 @@ menuBtn.addEventListener('click', () => {
         document.getElementById('myNav').style.width = '0%';
     }
 });
+
+/* navbar color change */
+
+window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar-wrapper');
+    const homeSection1 = document.querySelector('#home-section-1');
+    const homeSection2 = document.querySelector('#home-section-2');
+    const homeSection3 = document.querySelector('#home-section-3');
+    const honeSection4 = document.querySelector('#home-section-4');
+});
