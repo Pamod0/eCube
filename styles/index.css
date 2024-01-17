@@ -252,6 +252,9 @@ body {
 
 /* The dots/bullets/indicators */
 .three-dots-col {
+    position: fixed;
+    top: 50%;
+    width: 8.33333333% !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -260,10 +263,13 @@ body {
   display: flex;
   flex-direction: column;
 }
+.dot:nth-child(1) {
+  background-color: #9370D9;
+}
 .dot {
     cursor: pointer;
-    height: 10px;
-    width: 10px;
+    height: 15px;
+    width: 15px;
     margin: 2px 2px;
     background-color: #ffffff;
     border: 2px solid #0000004B;
