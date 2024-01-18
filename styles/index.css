@@ -392,7 +392,33 @@ body {
     width: 280px !important;
 }
 .who-r-we-text-area {
+    margin-bottom: 15px;
     color: #FFFFFF;
+}
+.btn-group-01 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.btn-group-01 > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto !important;
+    height: 50px !important;
+    padding: 10px 15px;
+    margin: 15px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    outline: 0px;
+    box-shadow: none;
+    transition: all 0.5s ease 0s;
+    border: 2px solid #9370DA;
+    border-radius: 23px;
 }
 
 /* home-section-03 */

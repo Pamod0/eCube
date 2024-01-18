@@ -48,3 +48,60 @@ window.addEventListener('scroll', function() {
       highlightedDot.style.backgroundColor = '#9370D9';
     }
   });
+
+  // change the color of navbar when scrolling
+
+  // Get the navigation bar element
+  const navbar = document.querySelector('.navbar-section');
+
+  // Function to update the navigation bar color based on the current section
+  function updateNavbarColor() {
+    // Get the current section
+    const currentSection = document.querySelector('section.active');
+    console.log(currentSection);
+
+    // Get the class name of the current section
+    const sectionClassName = currentSection.className;
+    console.log(sectionClassName);
+
+    // Reset the navigation bar color
+    navbar.style.backgroundColor = ''; 
+
+    // Update the navigation bar color based on the section class
+    if (sectionClassName.includes('home-section-01')) {
+      navbar.style.backgroundColor = '#FFFFFF'; // Set the color for home-section-1
+    } else if (sectionClassName.includes('home-section-02')) {
+      navbar.style.backgroundColor = '#00FF00'; // Set the color for home-section-2
+    }
+    // Add more conditions as needed for other sections
+  }
+
+  // Function to handle scroll events and update the navigation bar color
+  function handleScroll() {
+    // Set a threshold to determine the active section based on scroll position
+    const threshold = 0.5;
+
+    // Get all the sections
+    const sections = document.querySelectorAll('section');
+
+    // Check each section's position and mark the active section
+    sections.forEach((section) => {
+      const rect = section.getBoundingClientRect();
+      const isVisible = rect.top <= window.innerHeight * threshold && rect.bottom >= 0;
+
+      if (isVisible) {
+        section.classList.add('active');
+      } else {
+        section.classList.remove('active');
+      }
+    });
+
+    // Update the navigation bar color based on the active section
+    updateNavbarColor();
+  }
+
+  // Attach the handleScroll function to the window scroll event
+  window.addEventListener('scroll', handleScroll);
+
+  // Call the handleScroll function initially to set the initial state
+  handleScroll();
