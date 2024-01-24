@@ -20,7 +20,7 @@ body {
   display: inline-block;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;  
   width: 175px !important;
   height: 40px !important;
   color: #ffffff;
@@ -375,6 +375,8 @@ body {
 }
 /* home-section-02 */
 .home-section-02 {
+  padding-left: 16%;
+  padding-right: 10%;
   background-color: #191919;
 }
 .statues-img-wrapper {
