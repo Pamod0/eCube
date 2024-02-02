@@ -43,7 +43,7 @@ window.addEventListener('scroll', function () {
     highlightedDot.style.backgroundColor = '#9370D9';
   }
 });
-/*
+
 // change the color of navbar when scrolling
 
 const navbar = document.querySelector('.navbar-section');
@@ -52,16 +52,21 @@ const navbarLinks = document.querySelectorAll('.navbar-links a');
 
 function updateNavbarColor() {
   const currentSection = document.querySelector('section.active');
-  console.log(currentSection);
+  console.log(`current section: ${currentSection}`);
 
   const sectionClassName = currentSection.className;
-  console.log(sectionClassName);
+  console.log(`section class name: ${sectionClassName}`);
 
   navbar.style.backgroundColor = '';
   navbar.style.boxShadow = '';
 
   if (sectionClassName.includes('home-section-01')) {
     navbar.style.backgroundColor = '#FFFFFF';
+    navbarLogo.src = './assets/navbar-logo.svg';
+    navbar.style.boxShadow = '0px 4px 4px #C3C3C3';
+    navbarLinks.forEach((link) => {
+      link.style.color = '#262626';
+    });
   } else if (sectionClassName.includes('home-section-02')) {
     navbar.style.backgroundColor = '#191919';
     navbarLogo.src = './assets/navbar-logo-white.svg';
@@ -102,4 +107,3 @@ window.addEventListener('scroll', handleScroll);
 
 // Call the handleScroll function initially to set the initial state
 handleScroll();
-*/
