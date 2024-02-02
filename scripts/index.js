@@ -1,4 +1,11 @@
+// preloader animation
+const preloader = document.getElementById('preloader');
+window.addEventListener('load', () => {
+  preloader.style.display = 'none';
+});
+
 /* hamburger icon */
+
 const menuBtn = document.querySelector('.hamburger-btn-wrapper');
 let menuOpen = false;
 menuBtn.addEventListener('click', () => {
