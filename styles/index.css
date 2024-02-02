@@ -320,6 +320,9 @@ body {
 
 /*home section*/
 .home-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 84vh;
   margin-top: 16vh;
   overflow: hidden;
