@@ -1,5 +1,5 @@
 // preloader animation
-const preloader = document.getElementById('preloader');
+const preloader = document.getElementById('preloader-main');
 window.addEventListener('load', () => {
   preloader.style.display = 'none';
 });
