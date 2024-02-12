@@ -1,7 +1,7 @@
 // preloader animation
 const preloader = document.getElementById('preloader-main');
 window.addEventListener('load', () => {
-  preloader.style.display = '';
+  preloader.style.display = 'none';
 });
 
 /* hamburger icon */
